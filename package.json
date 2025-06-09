@@ -1,0 +1,31 @@
+{
+  "name": "jascit.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ts": "tsc",
+    "build:scss": "sass src/scss:dist/css",
+    "build": "npm run build:ts && npm run build:scss",
+    "watch:ts": "tsc --watch",
+    "watch:scss": "sass --watch src/scss:dist/css",
+    "watch": "npm run watch:ts & npm run watch:scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jascit/jascit.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jascit/jascit.github.io/issues"
+  },
+  "homepage": "https://github.com/Jascit/jascit.github.io#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "sass": "^1.89.1",
+    "typescript": "^5.8.3"
+  }
+}
